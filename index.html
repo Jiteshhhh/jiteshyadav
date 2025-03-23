@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ea6232f497.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container ">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" style="--i:1">Home</a></li>
+                    <li><a href="#about" style="--i:2">About</a></li>
+                    <li><a href="#services" style="--i:3">Services</a></li>
+                    <li><a href="#portfolio" style="--i:4">Certifications</a></li>
+                    <li><a href="#contact" style="--i:5">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Jitesh</span><br></h1>
+                <h2>Transforming data into actionable insights</h2>
+                <p>with Python, SQL, and powerful visualization tools<br>let's unlock the potential of your data
+                    together.</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- --------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div id="row">
+                <div class="about-col-1">
+                    <img src="images/PHOTO.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title reveal">About me</h1>
+                    <p>Hi, I'm Jitesh! I’m a data enthusiast with a passion for turning complex data into
+                        actionable insights. I specialize in Python, SQL, and data visualization tools like Power BI,
+                        Tableau, and Looker Studio. My goal is to help businesses make informed, data-driven decisions.
+                        I thrive on solving real-world problems and delivering impactful solutions through data.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!--  <p class="tab-links" onclick="opentab('experience')">Experience</p>  -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Pandas, NumPy, Seaborn, Matplotlib</li>
+                            <li><span>SQL</span><br>Experienced in SQL for data analysis, complex queries, optimization,
+                                database design</li>
+                            <li><span>Data Visualization</span><br>Power BI, Looker Studio, Tableau </li>
+                            <li><span>Figma</span><br>Proficient in using Figma to design user-friendly interfaces and
+                                create interactive prototypes and dashboards for seamless user experiences </li>
+                            <li><span>Video and Photo Editing</span><br>Proficient in editing and producing high-quality
+                                videos and images using software like Adobe Premiere Pro,
+                                and Adobe Photoshop.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>Designer Web/App interfaces</li>
+                            <li><span>2019-2021</span><br>Working as a desinger</li>
+                            <li><span>2017-2019</span><br>Android/iOS apps </li>
+                            <li><span>2016-2017</span><br>iOS apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SIES College of Arts, Science and Commerce- Mumbai, BSc in Computer
+                                    Science</span><br>2020–2023<br>CGPA: 8.8/10</li>
+                            <li><span>KJ Somaiya College of Science and Commerce – Mumbai, 12th
+                                    Science</span><br>2018–2020<br>83.23% </li>
+                            <li><span>B.P.E.S. High School- Mumbai, 10th</span><br>2018<br>91%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title reveal">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-sync-alt"></i>
+                    <h2>Data Cleaning and Preprocessing</h2>
+                    <p>Offering services to clean, transform, and organize raw data into a usable format, ensuring
+                        consistency, accuracy, and completeness for analysis..</p>
+                    <!--<a href="#">learn more</a>-->
+                </div>
+                <div>
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>Data Visualization and Reporting</h2>
+                    <p>Creating interactive dashboards, visualizations, and detailed reports using tools like Power BI,
+                        Tableau, and Python libraries (Matplotlib, Seaborn) to present insights clearly and help
+                        businesses make data-driven decisions</p>
+                    <!--<a href="#">learn more</a>-->
+                </div>
+                <div>
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Statistical Analysis and Predictive Modeling</h2>
+                    <p>Providing advanced statistical analysis, hypothesis testing, and building predictive models
+                        (e.g., regression, classification) to forecast trends, customer behavior, or business outcomes
+                    </p>
+                    <!--<a href="#">learn more</a>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title reveal">Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Data Analysis with Python</h3>
+                        <p>Completed the IBM Data Analysis with Python course, where I gained hands-on experience with
+                            data cleaning, analysis, and visualization using Python libraries like Pandas, NumPy,
+                            Matplotlib, and Seaborn. I learned to extract insights from data, perform statistical
+                            analysis, and create informative visualizations for data-driven decision-making</p>
+                        <a href="https://www.credly.com/badges/b5d3da3a-0a0d-4788-824f-45e75c6dc265/public_url"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Google Cloud Data Analytics</h3>
+                        <p>Completed a Google Cloud Data Analytics course, where I gained practical experience in
+                            leveraging BigQuery for large-scale data querying and analysis, and using Looker Studio to
+                            create interactive dashboards and visualizations. I developed skills in handling big data,
+                            optimizing queries, and presenting data insights for informed decision-making.</p>
+                        <a
+                            href="https://www.cloudskillsboost.google/public_profiles/0d6cee55-2da1-42af-be9b-6b96492245a2"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Introduction to Data Science in Python </h3>
+                        <p>Completed the Introduction to Data Science with Python course by the University of Michigan
+                            on Coursera, where I learned to manipulate and analyze data using Python libraries like
+                            Pandas, NumPy, and Matplotlib. I gained hands-on experience in data cleaning, visualization,
+                            and statistical analysis to draw meaningful insights from datasets and solve real-world
+                            problems.</p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/verify/FAA5DZ5U8RJJ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title reveal">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>jyadav20101@gmail.com</p>
+                    <!--<p><i class="fa-solid fa-phone"></i>987654321</p>-->
+                    <div class="social-icons">
+                        <!--<a href="#"><i class="fa-brands fa-instagram"></i></a>-->
+                        <a href="https://www.linkedin.com/in/jitesh-yadav-b7061b315"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Jitesh Yadav(Resume).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Number" placeholder="Contact Number" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© All Rights reserved</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeIsrnq4_N_orKxYV-7ynq936UAFy8OPmXeyqKrDhrzd5gMqoXxIPaeZpK5H_j5C5d/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
